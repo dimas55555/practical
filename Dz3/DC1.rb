@@ -43,6 +43,24 @@ class OrderDecorator < Order
     @order.cost
   end
 end
+# Конкретний декоратор - додавання десерту до замовлення
+class DessertDecorator < OrderDecorator
+  attr_reader :dessert_name, :dessert_price
+
+  def initialize(order, dessert_name, dessert_price)
+    super(order)
+    @dessert_name = dessert_name
+    @dessert_price = dessert_price
+  end
+
+  def description
+    "#{super}, Десерт: #{@dessert_name}"
+  end
+
+  def cost
+    super + @dessert_price
+  end
+end
 
 # Конкретний декоратор - додавання напою до замовлення
 class BeverageDecorator < OrderDecorator
@@ -60,25 +78,6 @@ class BeverageDecorator < OrderDecorator
 
   def cost
     super + @beverage_price
-  end
-end
-
-# Конкретний декоратор - додавання десерту до замовлення
-class DessertDecorator < OrderDecorator
-  attr_reader :dessert_name, :dessert_price
-
-  def initialize(order, dessert_name, dessert_price)
-    super(order)
-    @dessert_name = dessert_name
-    @dessert_price = dessert_price
-  end
-
-  def description
-    "#{super}, Десерт: #{@dessert_name}"
-  end
-
-  def cost
-    super + @dessert_price
   end
 end
 

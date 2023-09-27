@@ -17,7 +17,7 @@ class Beverage
   end
 end
 
-# Конкретний напій - Кава
+# Конкретний компонент- напій  Кава
 class Coffee < Beverage
   # вартість кави
   def cost
@@ -37,12 +37,12 @@ class BeverageDecorator < Beverage
     @beverage = beverage
   end
 
-  # Декоратор передає виклик методу cost об'єкту, який він декорує
+  # Повертає вартість замовлення, яку отримано від декорованого замовлення
   def cost
     @beverage.cost
   end
 
-  # Декоратор передає виклик методу description об'єкту, який він декорує
+  # Повертає опис замовлення, який отриманий від декорованого замовлення
   def description
     @beverage.description
   end

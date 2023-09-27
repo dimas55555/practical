@@ -32,9 +32,8 @@ end
 
 # Декоратор для додавання молока до напою
 class MilkDecorator
-  def initialize(beverage, client_name)
+  def initialize(beverage)
     @beverage = beverage
-    @client_name = client_name
   end
 
   # Обчислення вартості з молоком
@@ -42,17 +41,16 @@ class MilkDecorator
     @beverage.cost + 3
   end
 
-  # Розширення опису з молоком і вказанням клієнта
+  # Розширення опису з молоком
   def description
-    "#{@beverage.description}, з молоком клієнта #{@client_name}"
+    "#{@beverage.description}, з молоком"
   end
 end
 
 # Декоратор для додавання цукру до напою
 class SugarDecorator
-  def initialize(beverage, client_name)
+  def initialize(beverage)
     @beverage = beverage
-    @client_name = client_name
   end
 
   # Обчислення вартості з цукром
@@ -60,24 +58,23 @@ class SugarDecorator
     @beverage.cost + 2.5
   end
 
-  # Розширення опису з цукром і вказанням клієнта
+  # Розширення опису з цукром
   def description
-    "#{@beverage.description}, з цукром клієнта #{@client_name}"
+    "#{@beverage.description}, з цукром"
   end
 end
 
 # Використання
 client_name = 'Іван'
 coffee = Coffee.new(client_name)
-coffee_with_milk = MilkDecorator.new(coffee, client_name)
-coffee_with_milk_and_sugar = SugarDecorator.new(coffee_with_milk, client_name)
+coffee_with_milk_and_sugar = SugarDecorator.new(MilkDecorator.new(coffee))
 
-puts coffee_with_milk_and_sugar.description # Виведе: "Кава клієнта Іван, з молоком клієнта Іван, з цукром клієнта Іван"
+puts coffee_with_milk_and_sugar.description # Виведе: "Кава клієнта Іван, з молоком, з цукром"
 puts coffee_with_milk_and_sugar.cost        # Виведе: 20.5
 
 client_name2 = 'Даня'
 coffee2 = Coffee.new(client_name2)
-coffee_with_milk2 = MilkDecorator.new(coffee2, client_name2)
+coffee_with_milk2 = MilkDecorator.new(coffee2)
 
-puts coffee_with_milk2.description # Виведе: "Кава клієнта Даня, з молоком клієнта Даня"
+puts coffee_with_milk2.description # Виведе: "Кава клієнта Даня, з молоком"
 puts coffee_with_milk2.cost        # Виведе: 18.0

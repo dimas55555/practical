@@ -52,3 +52,10 @@ mp3_player.save  # Збереження у форматі MP3: song.mp3
 
 wav_player.play  # Відтворення музичного файлу: song
 wav_player.save  # Збереження у форматі WAV: song.wav
+
+puts"\n"
+music_file2 = MusicFile.new("song2")
+mp3_player2 = MP3Decorator.new(music_file2)
+
+mp3_player2.play  # Відтворення музичного файлу: song
+mp3_player2.save  # Збереження у форматі MP3: song.mp3

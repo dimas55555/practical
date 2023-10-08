@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72e61b87-bc0f-419e-b668-6405d0e26b1e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patern/DC3.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Patern/DC3.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,22 +40,21 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Ruby.DC4">
-    <configuration name="DC1 (1)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="Ruby-progect" />
+  <component name="RunManager" selected="Ruby.Conversion of numbers">
+    <configuration name="Cake (2)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Patern/DC1.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$USER_HOME$/Desktop/PR/Cake.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="DC2 (1)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="Cake" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="Ruby-progect" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -65,11 +64,11 @@
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Patern/DC2.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Dz3/Cake.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="DC2" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="Conversion of numbers" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="Ruby-progect" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -79,45 +78,43 @@
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Dz3/DC2.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Dz4/Conversion of numbers.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="DC3" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="Ruby-progect" />
+    <configuration name="Pr3_Cake (1)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Patern/DC3.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$USER_HOME$/Desktop/Pr3_Cake.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="DC4" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="Ruby-progect" />
+    <configuration name="Pr3_Cake" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Patern/DC4.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$USER_HOME$/Downloads/Telegram Desktop/Pr3_Cake.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Ruby.DC4" />
-        <item itemvalue="Ruby.DC3" />
-        <item itemvalue="Ruby.DC2 (1)" />
-        <item itemvalue="Ruby.DC1 (1)" />
-        <item itemvalue="Ruby.DC2" />
+        <item itemvalue="Ruby.Conversion of numbers" />
+        <item itemvalue="Ruby.Pr3_Cake (1)" />
+        <item itemvalue="Ruby.Pr3_Cake" />
+        <item itemvalue="Ruby.Cake" />
+        <item itemvalue="Ruby.Cake (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +134,20 @@
       <workItem from="1695731473840" duration="566000" />
       <workItem from="1695793868826" duration="8088000" />
       <workItem from="1695817709497" duration="6013000" />
-      <workItem from="1695825840131" duration="343000" />
+      <workItem from="1695825840131" duration="495000" />
+      <workItem from="1695877939403" duration="900000" />
+      <workItem from="1695884792476" duration="1410000" />
+      <workItem from="1696253885243" duration="7193000" />
+      <workItem from="1696494297973" duration="3027000" />
+      <workItem from="1696583118566" duration="3469000" />
+      <workItem from="1696595502642" duration="2551000" />
+      <workItem from="1696603705717" duration="2924000" />
+      <workItem from="1696606697321" duration="13000" />
+      <workItem from="1696665043884" duration="5325000" />
+      <workItem from="1696671875139" duration="1558000" />
+      <workItem from="1696673830980" duration="1019000" />
+      <workItem from="1696752957361" duration="2850000" />
+      <workItem from="1696756089854" duration="604000" />
     </task>
     <servers />
   </component>
@@ -147,16 +157,23 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RPN_rb@DC1.rcov" NAME="DC1 Coverage Results" MODIFIED="1695814305633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/RPN_rb@DC4.rcov" NAME="DC4 Coverage Results" MODIFIED="1695817650015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
-    <SUITE FILE_PATH="coverage/DC1_rb@DC2__1_.rcov" NAME="DC2 (1) Coverage Results" MODIFIED="1695820370029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/Cake_rb@Cake__1_.rcov" NAME="Cake (1) Coverage Results" MODIFIED="1696665143587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/Cake_rb@Pr3_Cake.rcov" NAME="Pr3_Cake Coverage Results" MODIFIED="1696756502619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/Cake_rb@Cake.rcov" NAME="Cake Coverage Results" MODIFIED="1696754665182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/DC1_rb@DC2__1_.rcov" NAME="DC2 (1) Coverage Results" MODIFIED="1696499181866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Ruby_progect@RPN.rcov" NAME="RPN Coverage Results" MODIFIED="1695017854976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/DC1_rb@DC4.rcov" NAME="DC4 Coverage Results" MODIFIED="1695825915708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/RPN_rb@RPN.rcov" NAME="RPN Coverage Results" MODIFIED="1695100149388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/RPN_rb@DC2__1_.rcov" NAME="DC2 (1) Coverage Results" MODIFIED="1695816956794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
-    <SUITE FILE_PATH="coverage/DC1_rb@DC1__1_.rcov" NAME="DC1 (1) Coverage Results" MODIFIED="1695820353458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
-    <SUITE FILE_PATH="coverage/DC1_rb@DC3.rcov" NAME="DC3 Coverage Results" MODIFIED="1695825909203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/Cake_rb@Pr3_Cake__1_.rcov" NAME="Pr3_Cake (1) Coverage Results" MODIFIED="1696756682158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/DC1_rb@DC1__1_.rcov" NAME="DC1 (1) Coverage Results" MODIFIED="1696499167397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/DC1_rb@DC3.rcov" NAME="DC3 Coverage Results" MODIFIED="1696499188853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/RPN_rb@DC1__1_.rcov" NAME="DC1 (1) Coverage Results" MODIFIED="1695816825202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/RPN_rb@DC3.rcov" NAME="DC3 Coverage Results" MODIFIED="1695817557635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/Cake_rb@Conversion_of_numbers.rcov" NAME="Conversion of numbers Coverage Results" MODIFIED="1696753358854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/game_rock_scissors_paper__rb@game_rock_scissors_paper_.rcov" NAME="game(rock,scissors,paper) Coverage Results" MODIFIED="1695018199395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/Cake_rb@Cake__2_.rcov" NAME="Cake (2) Coverage Results" MODIFIED="1696665152211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/DC1_rb@Cake.rcov" NAME="Cake Coverage Results" MODIFIED="1696261019741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/RPN_rb@DC2.rcov" NAME="DC2 Coverage Results" MODIFIED="1695814309471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
   </component>
 </project>

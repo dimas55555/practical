@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72e61b87-bc0f-419e-b668-6405d0e26b1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Testing/error_handling/bre.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/error_handling/custom.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/error_handling/ensure.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/error_handling/raise.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/error_handling/retry.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/gem/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/gem/Gemfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/stubs_mocks/EmailService.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/stubs_mocks/UserService.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/stubs_mocks/test_email_service.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/stubs_mocks/test_user_service.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/tools/Minitest.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/tools/RSpectest.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/tools/features/basic_math_operations.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/tools/features/step_definitions/steps.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/tools/features/support/env.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/types_of_tests/Functional_tests.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/types_of_tests/app.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/types_of_tests/database.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing/types_of_tests/user.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dz5/IPv4.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Ruby-progect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ruby-progect.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +47,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Ruby.ensure">
+  <component name="RunManager" selected="Ruby.IPv4">
     <configuration name="Functional_tests" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="Ruby-progect" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -79,6 +59,20 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Testing/types_of_tests/Functional_tests.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="IPv4" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="Ruby-progect" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Dz5/IPv4.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
@@ -110,20 +104,6 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="custom" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="Ruby-progect" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Testing/error_handling/custom.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ensure" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="Ruby-progect" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -140,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby.IPv4" />
         <item itemvalue="Ruby.ensure" />
         <item itemvalue="Ruby.bre" />
         <item itemvalue="Ruby.Functional_tests" />
         <item itemvalue="Ruby.Minitest" />
-        <item itemvalue="Ruby.custom" />
       </list>
     </recent_temporary>
   </component>
@@ -194,6 +174,8 @@
       <workItem from="1696949969609" duration="3765000" />
       <workItem from="1697008753787" duration="535000" />
       <workItem from="1697359043984" duration="1648000" />
+      <workItem from="1697479936527" duration="904000" />
+      <workItem from="1697480979563" duration="347000" />
     </task>
     <servers />
   </component>
@@ -229,6 +211,7 @@
     <SUITE FILE_PATH="coverage/RSpectest_rb@ensure.rcov" NAME="ensure Coverage Results" MODIFIED="1697360697872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Cake_rb@Pr3_Cake.rcov" NAME="Pr3_Cake Coverage Results" MODIFIED="1696756502619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Minitest_rb@custom.rcov" NAME="custom Coverage Results" MODIFIED="1696954703312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/Conversion_of_numbers_rb@IPv4.rcov" NAME="IPv4 Coverage Results" MODIFIED="1697480478207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Ruby_progect@RPN.rcov" NAME="RPN Coverage Results" MODIFIED="1695017854976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Unit_Tests_rb@Unit_tests.rcov" NAME="Unit_tests Coverage Results" MODIFIED="1696944082067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Integration_tests_rb@RSpec.rcov" NAME="RSpec Coverage Results" MODIFIED="1696949229699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
@@ -252,6 +235,7 @@
     <SUITE FILE_PATH="coverage/Cake_rb@Conversion_of_numbers.rcov" NAME="Conversion of numbers Coverage Results" MODIFIED="1696753358854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Unit_Tests_rb@Unit_Tests.rcov" NAME="Unit Tests Coverage Results" MODIFIED="1696943471123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Cake_rb@Cake__2_.rcov" NAME="Cake (2) Coverage Results" MODIFIED="1696665152211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/IPv4_rb@IPv4.rcov" NAME="IPv4 Coverage Results" MODIFIED="1697481238047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/DC1_rb@Cake.rcov" NAME="Cake Coverage Results" MODIFIED="1696261019741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Minitest_rb@ensure.rcov" NAME="ensure Coverage Results" MODIFIED="1696953661671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Conversion_of_numbers_rb@MiniTest_rb.rcov" NAME="MiniTest.rb Coverage Results" MODIFIED="1696838530499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />

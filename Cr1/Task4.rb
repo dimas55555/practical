@@ -14,8 +14,13 @@ loop do
   when 1
     print "Введіть бажану довжину пароля: "
     length = gets.chomp.to_i
-    random_password = generate_random_password(length)
-    puts "Згенерований випадковий пароль: #{random_password}"
+
+    if length <= 0
+      puts "Довжина пароля повинна бути додатнім числом."
+    else
+      random_password = generate_random_password(length)
+      puts "Згенерований випадковий пароль: #{random_password}"
+    end
   when 0
     puts "До побачення!"
     break

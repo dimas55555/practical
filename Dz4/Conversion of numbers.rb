@@ -60,7 +60,11 @@ loop do
     puts "Введіть римську цифру:"
     roman = gets.chomp.upcase
     result = roman_to_int(roman)
-    puts "Результат: #{result}" if result
+    if result && result >= 1 && result < 4000
+      puts "Результат: #{result}"
+    else
+      puts "Число повинно бути в діапазоні від 1 до 3999"
+    end
   when 2
     puts "Введіть ціле число:"
     num = gets.chomp.to_i

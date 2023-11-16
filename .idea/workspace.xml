@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72e61b87-bc0f-419e-b668-6405d0e26b1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dz6/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dz6/Gemfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dz6/Site.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dz6/results.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Ruby-progect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ruby-progect.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dz6/Site.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Dz6/Site.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dz6/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dz6/results.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +197,9 @@
       <workItem from="1698920516636" duration="1664000" />
       <workItem from="1699518241707" duration="1700000" />
       <workItem from="1699709205979" duration="3230000" />
-      <workItem from="1699876875726" duration="2512000" />
+      <workItem from="1699876875726" duration="3491000" />
+      <workItem from="1700061206206" duration="756000" />
+      <workItem from="1700122443706" duration="7652000" />
     </task>
     <servers />
   </component>
@@ -212,7 +211,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Integration_tests_rb@Unit_tests.rcov" NAME="Unit_tests Coverage Results" MODIFIED="1696947344044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
-    <SUITE FILE_PATH="coverage/Site_rb@Site.rcov" NAME="Site Coverage Results" MODIFIED="1699882963563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/Site_rb@Site.rcov" NAME="Site Coverage Results" MODIFIED="1700061494552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Minitest_rb@bre.rcov" NAME="bre Coverage Results" MODIFIED="1696953431122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/DC1_rb@DC4.rcov" NAME="DC4 Coverage Results" MODIFIED="1695825915708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/DC1_rb@DC1__1_.rcov" NAME="DC1 (1) Coverage Results" MODIFIED="1696499167397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
@@ -257,6 +256,7 @@
     <SUITE FILE_PATH="coverage/RPN_rb@DC2.rcov" NAME="DC2 Coverage Results" MODIFIED="1695814309471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/IPv4_rb@Task1.rcov" NAME="Task1 Coverage Results" MODIFIED="1697716668277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Integration_tests_rb@test_multiplication.rcov" NAME="test_multiplication Coverage Results" MODIFIED="1696948280338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
+    <SUITE FILE_PATH="coverage/Functional_tests_rb@Site.rcov" NAME="Site Coverage Results" MODIFIED="1700132290416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Conversion_of_numbers_rb@Cake.rcov" NAME="Cake Coverage Results" MODIFIED="1696915121758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Minitest_rb@RSpectest.rcov" NAME="RSpectest Coverage Results" MODIFIED="1696950431343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />
     <SUITE FILE_PATH="coverage/Minitest_rb@raise.rcov" NAME="raise Coverage Results" MODIFIED="1696953741529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-progect" />

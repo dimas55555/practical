@@ -17,10 +17,10 @@ csv_filename = 'DZ6/results.csv'
 # Відкриття CSV-файлу для запису результатів парсингу
 CSV.open(csv_filename, 'w') do |csv|
   # Додавання заголовка CSV з іменами стовпців
-  csv << %w[Name Link] # Заголовки
+  csv << %w[Name Link ID] # Заголовки
 
   # Парсинг даних і додавання їх у CSV-файл
-  doc.css('.column1 #BlinkDBContent_849210 ul li a').each do |element|
+  doc.css('.column1 #BlinkDBContent_849210 ul li a').each_with_index do |element, index|
     begin
       # Отримання тексту з тегу <a>
       data1 = element.text.strip
@@ -28,8 +28,8 @@ CSV.open(csv_filename, 'w') do |csv|
       # Формування посилання та збереження його значення
       data2 = URI.join(url, element['href']).to_s
 
-      # Додавання даних у CSV-файл
-      csv << [data1, data2]
+      # Додавання даних та ID у CSV-файл
+      csv << [data1, data2, index + 1]
     rescue StandardError => e
       # Обробка можливих помилок і виведення повідомлення
       puts "Помилка при обробці елемента: #{e.message}"

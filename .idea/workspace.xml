@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72e61b87-bc0f-419e-b668-6405d0e26b1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Comand work 2/game_scenario_dsl.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comand work 2/main.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comand work 2/npc.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comand work 2/player.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cr2/Task_1.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cr2/Task_2.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cr2/Task_3.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.Task_1">
+  <component name="RunManager" selected="Ruby.Task_3">
     <configuration name="Task_1" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="Ruby-progect" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -133,8 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Ruby.Task_1" />
         <item itemvalue="Ruby.Task_3" />
+        <item itemvalue="Ruby.Task_1" />
         <item itemvalue="Ruby.Task_2" />
         <item itemvalue="Ruby.main" />
         <item itemvalue="Ruby.game_scenario_dsl" />
@@ -207,7 +199,7 @@
       <workItem from="1700122443706" duration="7881000" />
       <workItem from="1700547810112" duration="61000" />
       <workItem from="1700675110384" duration="3624000" />
-      <workItem from="1700732179987" duration="12831000" />
+      <workItem from="1700732179987" duration="13761000" />
     </task>
     <servers />
   </component>

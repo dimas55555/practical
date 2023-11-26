@@ -30,7 +30,7 @@ loop do
       race gets.chomp
       print "Клас: "
       class_type gets.chomp
-      print "Рівень: "
+      print "Рівень1: "
       level gets.chomp.to_i
       print "Екіпірування (розділіть предмети комами): "
       equipment gets.chomp.split(", ")

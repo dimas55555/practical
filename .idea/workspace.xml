@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72e61b87-bc0f-419e-b668-6405d0e26b1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Comand work 2/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comand work 2/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Ruby-progect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ruby-progect.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comand work 2/game_scenario_dsl.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Comand work 2/game_scenario_dsl.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comand work 2/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Comand work 2/main.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comand work 2/player.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Comand work 2/player.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +202,7 @@
       <workItem from="1700732179987" duration="14518000" />
       <workItem from="1700773567747" duration="3014000" />
       <workItem from="1700776630860" duration="613000" />
-      <workItem from="1701004183373" duration="5981000" />
+      <workItem from="1701004183373" duration="7347000" />
     </task>
     <servers />
   </component>

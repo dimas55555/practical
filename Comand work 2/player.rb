@@ -1,22 +1,25 @@
-# player.rb
-class Player
-  attr_accessor :name, :character_class, :health, :actions, :inventory
-
-  def initialize
-    @actions = []
+class Character
+  def initialize(name)
+    @details = { name: name }
   end
 
-  def perform_actions
-    puts "Player is taking actions:"
-    @actions.each { |action| puts "- #{action}" }
+  def race(race)
+    @details[:race] = race
   end
 
-  def player_action(&block)
-    instance_eval(&block) if block_given?
+  def class_type(class_type)
+    @details[:class] = class_type
   end
 
-  def to_s
-    "#{name}, Class: #{character_class}, Health: #{health}, Inventory: #{inventory}"
+  def level(level)
+    @details[:level] = level
+  end
+
+  def equipment(*items)
+    @details[:equipment] = items
+  end
+
+  def details
+    @details
   end
 end
-

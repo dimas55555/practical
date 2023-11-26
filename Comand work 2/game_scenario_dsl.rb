@@ -1,7 +1,7 @@
 # game_scenario_dsl.rb
 require_relative 'player'
 require_relative 'npc'
-
+require_relative 'inventory'
 class GameScenario
   attr_accessor :player, :npcs
 

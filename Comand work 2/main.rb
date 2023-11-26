@@ -5,6 +5,25 @@ def clear_screen
   Gem.win_platform? ? system('cls') : system('clear')
 end
 
+RACES = %w[Human Elf Dwarf Orc] # Замініть це на свій список рас
+CLASSES = %w[Warrior Mage Rogue Cleric] # Замініть це на свій список класів
+
+def choose_race
+  puts "Доступні раси:"
+  RACES.each_with_index { |race, index| puts "#{index + 1}. #{race}" }
+  print "Оберіть номер раси: "
+  chosen_index = gets.chomp.to_i - 1
+  RACES[chosen_index] if chosen_index.between?(0, RACES.size - 1)
+end
+
+def choose_class
+  puts "Доступні класи:"
+  CLASSES.each_with_index { |class_type, index| puts "#{index + 1}. #{class_type}" }
+  print "Оберіть номер класу: "
+  chosen_index = gets.chomp.to_i - 1
+  CLASSES[chosen_index] if chosen_index.between?(0, CLASSES.size - 1)
+end
+
 dnd_player = DnDDSL.new
 
 # Генерація початкової локації
@@ -38,17 +57,22 @@ loop do
         puts "===== Додати персонажа ====="
         print "Ім'я персонажа: "
         name = gets.chomp
-        dnd_player.add_character(name) do
-          print "Раса: "
-          race gets.chomp
-          print "Клас: "
-          class_type gets.chomp
-          print "Рівень: "
-          level gets.chomp.to_i
-          print "Екіпірування (розділіть предмети комами): "
-          equipment gets.chomp.split(", ")
+        race = choose_race
+        class_type = choose_class
+
+        if race && class_type
+          dnd_player.add_character(name) do
+            race race
+            class_type class_type
+            print "Рівень: "
+            level gets.chomp.to_i
+            print "Екіпірування (розділіть предмети комами): "
+            equipment gets.chomp.split(", ")
+          end
+          puts "Персонаж #{name} успішно доданий!\n\n"
+        else
+          puts "Невірний вибір раси або класу. Спробуйте ще раз."
         end
-        puts "Персонаж #{name} успішно доданий!\n\n"
       when 2
         puts "===== Перегляд персонажів ====="
         if dnd_player.player[:characters].empty?
@@ -142,17 +166,21 @@ loop do
           case sub_choice_monster
           when 1
             puts "===== Додати гуманоїдного монстра ====="
-            print "Назва: "
-            monster_name = gets.chomp
-            dnd_player.add_humanoid_monster(monster_name) do
-              print "Раса: "
-              race gets.chomp
-              print "Клас: "
-              class_type gets.chomp
-              print "Рівень: "
-              level gets.chomp.to_i
+            print "Ім'я монстра: "
+            name = gets.chomp
+            race = choose_race
+            class_type = choose_class
+            if race && class_type
+              dnd_player.add_humanoid_monster(name) do
+                race race
+                class_type class_type
+                print "Рівень: "
+                level gets.chomp.to_i
+              end
+              puts "Гуманоїдний монстр #{name} успішно доданий!\n\n"
+            else
+              puts "Невірний вибір раси або класу для гуманоїдного монстра. Спробуйте ще раз."
             end
-            puts "Гуманоїдний монстр #{monster_name} успішно доданий!\n\n"
           when 2
             puts "===== Додати монстра ====="
             print "Назва: "

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72e61b87-bc0f-419e-b668-6405d0e26b1e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Comand work 2/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Comand work 2/main.rb" afterDir="false" />
-    </list>
+    <list default="true" id="72e61b87-bc0f-419e-b668-6405d0e26b1e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,7 +200,7 @@
       <workItem from="1700732179987" duration="14518000" />
       <workItem from="1700773567747" duration="3014000" />
       <workItem from="1700776630860" duration="613000" />
-      <workItem from="1701004183373" duration="7737000" />
+      <workItem from="1701004183373" duration="8321000" />
     </task>
     <servers />
   </component>

@@ -61,14 +61,28 @@ loop do
         class_type = choose_class
 
         if race && class_type
+          puts "Оберіть початкові характеристики для персонажа #{name}:"
+          puts "1. Сила"
+          strength = gets.chomp.to_i
+          puts "2. Спритність"
+          dexterity = gets.chomp.to_i
+          puts "3. Витривалість"
+          constitution = gets.chomp.to_i
+          puts "4. Інтелект"
+          intelligence = gets.chomp.to_i
+          puts "5. HP"
+          hp = gets.chomp.to_i
+
           dnd_player.add_character(name) do
             race race
             class_type class_type
-            print "Рівень: "
-            level gets.chomp.to_i
-            print "Екіпірування (розділіть предмети комами): "
-            equipment gets.chomp.split(", ")
+            strength strength
+            dexterity dexterity
+            constitution constitution
+            intelligence intelligence
+            hp hp
           end
+
           puts "Персонаж #{name} успішно доданий!\n\n"
         else
           puts "Невірний вибір раси або класу. Спробуйте ще раз."
@@ -82,8 +96,12 @@ loop do
             puts "\nІм'я: #{character[:name]}"
             puts "Раса: #{character[:race]}"
             puts "Клас: #{character[:class]}"
-            puts "Рівень: #{character[:level]}"
-            puts "Екіпірування: #{character[:equipment].join(", ")}"
+            puts "Сила: #{character[:strength]}"
+            puts "Спритність: #{character[:dexterity]}"
+            puts "Витривалість: #{character[:constitution]}"
+            puts "Інтелект: #{character[:intelligence]}"
+            puts "HP: #{character[:hp]}"
+
             # Знаходження локації, до якої відноситься персонаж
             location = dnd_player.locations.find { |loc| loc[:characters].include?(character) }
 
@@ -95,6 +113,7 @@ loop do
           end
         end
         puts "\n"
+
       when 0
         break
       else

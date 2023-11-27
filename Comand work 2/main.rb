@@ -28,6 +28,16 @@ def roll_dice(sides)
   rand(1..sides)
 end
 
+# функції для розрахунку атаки та отриманого урону
+def calculate_attack_damage(attack_stat)
+  roll_dice(6) + roll_dice(6) + attack_stat
+end
+
+def calculate_damage_taken(constitution, attack_damage)
+  (attack_damage / 2).to_i - constitution
+end
+# функції для розрахунку атаки та отриманого урону
+
 dnd_player = DnDDSL.new
 
 # Генерація початкової локації
@@ -434,7 +444,7 @@ loop do
     loop do
       puts "===== Події ====="
       puts "1. Перемістити персонажа на локацію"
-      puts "2. Випадкова зустріч"
+      puts "2. Випадкова зустріч" # залишилося доробити
       puts "3. Покинути локацію персонажем"
       puts "0. Повернутися до головного меню"
 
@@ -508,10 +518,78 @@ loop do
 
               puts "Персонаж #{selected_character[:name]} зустрів монстра #{random_monster[:name]}!"
               # Додавання зустріченого монстра до локації (можна зробити також інші дії)
-              
+              puts "Бій розпочато!"
 
-              puts "\n"
-            end
+              # Логіка бою
+              while selected_character[:hp] > 0 && random_monster[:hp] > 0
+                puts "\n--- Статус бою ---"
+                puts "#{selected_character[:name]} (HP: #{selected_character[:hp]}) vs #{random_monster[:name]} (HP: #{random_monster[:hp]})"
+
+                puts "\nОберіть дію для персонажа #{selected_character[:name]}:"
+                puts "1. Атака"
+                puts "2. Втеча"
+
+                action_choice = gets.chomp.to_i
+
+                case action_choice
+                when 1
+                  # Логіка атаки і розрахунку урону (як описано в попередньому повідомленні)
+                  attack_stat = case selected_character[:class]
+                                when 'Warrior'
+                                  selected_character[:strength]
+                                when 'Mage', 'Cleric'
+                                  selected_character[:intelligence]
+                                when 'Rogue'
+                                  selected_character[:dexterity]
+                                else
+                                  0
+                                end
+
+                  attack_damage = calculate_attack_damage(attack_stat)
+                  damage_taken = calculate_damage_taken(random_monster[:constitution], attack_damage)
+
+                  puts "#{selected_character[:name]} атакує монстра #{random_monster[:name]} і завдає #{attack_damage} урону!"
+
+                  if damage_taken > 0
+                    random_monster[:hp] -= damage_taken
+                    puts "#{random_monster[:name]} отримує #{damage_taken} урону. Залишилося HP: #{random_monster[:hp]}"
+                  else
+                    puts "#{random_monster[:name]} блокує урон! Залишилося HP: #{random_monster[:hp]}"
+                  end
+
+                  if random_monster[:hp] <= 0
+                    puts "Монстр #{random_monster[:name]} вбитий!"
+                    break
+                  end
+
+                  monster_attack_stat = [random_monster[:strength], random_monster[:dexterity], random_monster[:intelligence]].max
+                  monster_attack_damage = calculate_attack_damage(monster_attack_stat)
+                  monster_damage_taken = calculate_damage_taken(selected_character[:constitution], monster_attack_damage)
+
+                  puts "#{random_monster[:name]} атакує #{selected_character[:name]} і завдає #{monster_attack_damage} урону!"
+
+                  if monster_damage_taken > 0
+                    selected_character[:hp] -= monster_damage_taken
+                    puts "#{selected_character[:name]} отримує #{monster_damage_taken} урону. Залишилося HP: #{selected_character[:hp]}"
+                  else
+                    puts "#{selected_character[:name]} блокує урон! Залишилося HP: #{selected_character[:hp]}"
+                  end
+
+
+                  if selected_character[:hp] <= 0
+                    puts "#{selected_character[:name]} вбитий! Бій завершено."
+                    break
+                  end
+                when 2
+                  puts "#{selected_character[:name]} вирішив втекти з бою."
+                  break
+                else
+                  puts "Невірний вибір. Спробуйте ще раз."
+                end
+              end
+
+              puts "\n--- Бій завершено ---\n\n"
+          end
           else
             puts "Персонаж не знаходиться на жодній локації. Спочатку перемістіть його на локацію.\n\n"
           end

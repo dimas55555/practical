@@ -482,7 +482,42 @@ loop do
           puts "Невірний вибір персонажа. Спробуйте ще раз."
         end
       when 2
-        # Логіка для випадкової зустрічі
+        puts "Оберіть персонажа для випадкової зустрічі:"
+        dnd_player.player[:characters].each_with_index do |character, index|
+          puts "#{index + 1}. #{character[:name]}"
+        end
+
+        character_choice = gets.chomp.to_i
+
+        if character_choice.positive? && character_choice <= dnd_player.player[:characters].size
+          selected_character = dnd_player.player[:characters][character_choice - 1]
+
+          # Знаходження локації, до якої відноситься персонаж
+          location = dnd_player.locations.find { |loc| loc[:characters].include?(selected_character) }
+
+          if location
+            # Знаходження монстрів на локації
+            available_monsters = dnd_player.humanoid_monsters.select { |monster| location[:monsters].include?(monster) }
+            available_monsters += dnd_player.regular_monsters.select { |monster| location[:monsters].include?(monster) }
+
+            if available_monsters.empty?
+              puts "На даній локації немає монстрів для зустрічі\n\n"
+            else
+              # Вибір випадкового монстра
+              random_monster = available_monsters.sample
+
+              puts "Персонаж #{selected_character[:name]} зустрів монстра #{random_monster[:name]}!"
+              # Додавання зустріченого монстра до локації (можна зробити також інші дії)
+              
+
+              puts "\n"
+            end
+          else
+            puts "Персонаж не знаходиться на жодній локації. Спочатку перемістіть його на локацію.\n\n"
+          end
+        else
+          puts "Невірний вибір персонажа. Спробуйте ще раз."
+        end
       when 3
         puts "Оберіть персонажа, який повинен покинути локацію:"
         dnd_player.player[:characters].each_with_index do |character, index|

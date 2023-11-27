@@ -433,27 +433,87 @@ loop do
   when 3
     loop do
       puts "===== Події ====="
-      puts "1. Перемістити персонажа"
+      puts "1. Перемістити персонажа на локацію"
       puts "2. Випадкова зустріч"
-      puts "3. Прибрати персонажа з локації"
+      puts "3. Покинути локацію персонажем"
       puts "0. Повернутися до головного меню"
 
       sub_choice = gets.chomp.to_i
 
       case sub_choice
       when 1
-        # Логіка для переміщення персонажа
+        puts "Оберіть персонажа, якого ви хочете перемістити:"
+        dnd_player.player[:characters].each_with_index do |character, index|
+          puts "#{index + 1}. #{character[:name]}"
+        end
+
+        character_choice = gets.chomp.to_i
+
+        if character_choice.positive? && character_choice <= dnd_player.player[:characters].size
+          selected_character = dnd_player.player[:characters][character_choice - 1]
+
+          puts "Оберіть локацію, на яку ви хочете перемістити персонажа:"
+          dnd_player.locations.each_with_index do |location, index|
+            puts "#{index + 1}. #{location[:name]}"
+          end
+
+          location_choice = gets.chomp.to_i
+
+          if location_choice.positive? && location_choice <= dnd_player.locations.size
+            target_location = dnd_player.locations[location_choice - 1]
+
+            # Перевіряємо, чи персонаж вже наявний на інших локаціях
+            existing_location = dnd_player.locations.find { |loc| loc[:characters].include?(selected_character) }
+
+            if existing_location
+              # Персонаж вже на інших локаціях, переміщуємо його на нову локацію
+              existing_location[:characters].reject! { |char| char[:name] == selected_character[:name] }
+              target_location[:characters] << selected_character
+            else
+              # Персонаж не на локації, додається на обрану локацію
+              target_location[:characters] << selected_character
+            end
+
+            puts "Персонаж #{selected_character[:name]} успішно переміщений на локацію #{target_location[:name]}!\n\n"
+          else
+            puts "Невірний вибір локації. Спробуйте ще раз."
+          end
+        else
+          puts "Невірний вибір персонажа. Спробуйте ще раз."
+        end
       when 2
         # Логіка для випадкової зустрічі
       when 3
-        # Логіка для видалення персонажа з локації
+        puts "Оберіть персонажа, який повинен покинути локацію:"
+        dnd_player.player[:characters].each_with_index do |character, index|
+          puts "#{index + 1}. #{character[:name]}"
+        end
+
+        character_choice = gets.chomp.to_i
+
+        if character_choice.positive? && character_choice <= dnd_player.player[:characters].size
+          selected_character = dnd_player.player[:characters][character_choice - 1]
+
+          # Знаходимо локацію, на якій знаходиться персонаж
+          current_location = dnd_player.locations.find { |loc| loc[:characters].include?(selected_character) }
+
+          if current_location
+            # Видаляємо персонажа з поточної локації
+            current_location[:characters].delete(selected_character)
+
+            puts "Персонаж #{selected_character[:name]} успішно покинув локацію #{current_location[:name]}!\n\n"
+          else
+            puts "Помилка: персонаж не знаходиться на жодній локації."
+          end
+        else
+          puts "Невірний вибір персонажа. Спробуйте ще раз."
+        end
       when 0
         break
       else
-        puts "Невірний вибір. Спробуйте ще раз."
+        puts "Невідомий вибір. Спробуйте ще раз."
       end
     end
-
   when 4
     break
   else

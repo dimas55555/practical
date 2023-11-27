@@ -11,8 +11,24 @@ class HumanoidMonster
     @details[:class] = class_type
   end
 
-  def level(level)
-    @details[:level] = level
+  def strength(strength)
+    @details[:strength] = strength
+  end
+
+  def dexterity(dexterity)
+    @details[:dexterity] = dexterity
+  end
+
+  def constitution(constitution)
+    @details[:constitution] = constitution
+  end
+
+  def intelligence(intelligence)
+    @details[:intelligence] = intelligence
+  end
+
+  def hp(hp)
+    @details[:hp] = hp
   end
 
   def details

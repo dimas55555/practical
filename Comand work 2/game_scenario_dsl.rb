@@ -3,6 +3,7 @@ require_relative 'player'
 require_relative 'location'
 require_relative 'humanmonster'
 require_relative 'monster'
+
 class DnDDSL
   attr_reader :player, :locations, :humanoid_monsters, :regular_monsters
 
@@ -25,6 +26,7 @@ class DnDDSL
     character = Character.new(name)
     character.instance_eval(&block)
     @player[:characters] << character.details
+
     # Додати нового персонажа в початкову локацію
     initial_location = @locations.find { |location| location[:name] == "Початкова локація" }
     initial_location[:characters] << character.details

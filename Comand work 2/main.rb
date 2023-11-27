@@ -236,13 +236,73 @@ loop do
             name = gets.chomp
             race = choose_race
             class_type = choose_class
+
             if race && class_type
+              puts "Оберіть початкові характеристики для гуманоїдного монстра #{name}:"
+
+              bonus_dexterity = 0
+              bonus_constitution = 0
+              bonus_strength = 0
+              bonus_intelligence = 0
+              bonus_HP = 0
+
+              case race
+              when 'Dwarf'
+                bonus_constitution = 2
+                bonus_strength = 1
+              when 'Orc'
+                bonus_strength = 2
+                bonus_constitution = 1
+              when 'Elf'
+                bonus_dexterity = 2
+                bonus_intelligence = 1
+              when 'Human'
+                bonus_intelligence = 2
+                bonus_dexterity = 1
+              else
+                bonus_constitution = 0
+                bonus_strength = 0
+                bonus_dexterity = 0
+                bonus_intelligence = 0
+              end
+
+              case class_type
+              when 'Warrior'
+                bonus_strength += 6
+                bonus_HP += 12
+              when 'Mage', 'Cleric'
+                bonus_intelligence += 6
+                bonus_HP += 6
+              when 'Rogue'
+                bonus_dexterity += 6
+                bonus_HP += 8
+              else
+                puts "Невідомий клас гуманоїдного монстра. Спробуйте ще раз."
+                return
+              end
+
+              strength = roll_dice(6) + roll_dice(6) + roll_dice(6) + bonus_strength
+              dexterity = roll_dice(6) + roll_dice(6) + roll_dice(6) + bonus_dexterity
+              constitution = roll_dice(6) + roll_dice(6) + roll_dice(6) + bonus_constitution
+              intelligence = roll_dice(6) + 6 + roll_dice(6) + roll_dice(6) + bonus_intelligence
+              hp = roll_dice(6) + roll_dice(6) + roll_dice(6) + bonus_HP
+
+              puts "Сила: #{strength}"
+              puts "Спритність: #{dexterity}"
+              puts "Витривалість: #{constitution}"
+              puts "Інтелект: #{intelligence}"
+              puts "HP: #{hp}"
+
               dnd_player.add_humanoid_monster(name) do
                 race race
                 class_type class_type
-                print "Рівень: "
-                level gets.chomp.to_i
+                strength strength
+                dexterity dexterity
+                constitution constitution
+                intelligence intelligence
+                hp hp
               end
+
               puts "Гуманоїдний монстр #{name} успішно доданий!\n\n"
             else
               puts "Невірний вибір раси або класу для гуманоїдного монстра. Спробуйте ще раз."
@@ -254,9 +314,23 @@ loop do
             dnd_player.add_regular_monster(monster_name) do
               print "Тип: "
               monster_type gets.chomp
-              print "Рівень: "
-              level gets.chomp.to_i
+
+              print "Сила: "
+              strength gets.chomp.to_i
+
+              print "Спритність: "
+              dexterity gets.chomp.to_i
+
+              print "Витривалість: "
+              constitution gets.chomp.to_i
+
+              print "Інтелект: "
+              intelligence gets.chomp.to_i
+
+              print "HP: "
+              hp gets.chomp.to_i
             end
+
             puts "Монстр #{monster_name} успішно доданий!\n\n"
           when 3
             puts "===== Додати монстра на локацію ====="
@@ -331,15 +405,21 @@ loop do
           dnd_player.regular_monsters.each do |monster|
             puts "\nНазва: #{monster[:name]}"
             puts "Тип: #{monster[:monster_type]}"
-            puts "Рівень: #{monster[:level]}"
+
+            # Знаходження локації, до якої відноситься монстр
+            locations = dnd_player.locations.select { |loc| loc[:monsters].include?(monster) }
+            puts "Локації: #{locations.map { |loc| loc[:name] }.join(", ")}" unless locations.empty?
           end
 
           puts "\nГуманоїдні монстри:"
-          dnd_player.humanoid_monsters.each do |monster|
-            puts "\nНазва: #{monster[:name]}"
-            puts "Раса: #{monster[:race]}"
-            puts "Клас: #{monster[:class]}"
-            puts "Рівень: #{monster[:level]}"
+          dnd_player.humanoid_monsters.each do |humanmonster|
+            puts "\nНазва: #{humanmonster[:name]}"
+            puts "Раса: #{humanmonster[:race]}"
+            puts "Клас: #{humanmonster[:class]}"
+
+            # Знаходження локації, до якої відноситься монстр
+            locations = dnd_player.locations.select { |loc| loc[:monsters].include?(humanmonster) }
+            puts "Локації: #{locations.map { |loc| loc[:name] }.join(", ")}" unless locations.empty?
           end
         end
         puts "\n"

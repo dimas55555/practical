@@ -5,8 +5,8 @@ def clear_screen
   Gem.win_platform? ? system('cls') : system('clear')
 end
 
-RACES = %w[Human Elf Dwarf Orc] # Замініть це на свій список рас
-CLASSES = %w[Warrior Mage Rogue Cleric] # Замініть це на свій список класів
+RACES = %w[Human Elf Dwarf Orc] # свій список рас
+CLASSES = %w[Warrior Mage Rogue Cleric] # свій список класів
 
 def choose_race
   puts "Доступні раси:"
@@ -22,6 +22,10 @@ def choose_class
   print "Оберіть номер класу: "
   chosen_index = gets.chomp.to_i - 1
   CLASSES[chosen_index] if chosen_index.between?(0, CLASSES.size - 1)
+end
+
+def roll_dice(sides)
+  rand(1..sides)
 end
 
 dnd_player = DnDDSL.new
@@ -60,18 +64,61 @@ loop do
         race = choose_race
         class_type = choose_class
 
+        bonus_dexterity = 0
+        bonus_constitution = 0
+        bonus_strength = 0
+        bonus_intelligence = 0
+        bonus_HP = 0
+
         if race && class_type
           puts "Оберіть початкові характеристики для персонажа #{name}:"
-          puts "1. Сила"
-          strength = gets.chomp.to_i
-          puts "2. Спритність"
-          dexterity = gets.chomp.to_i
-          puts "3. Витривалість"
-          constitution = gets.chomp.to_i
-          puts "4. Інтелект"
-          intelligence = gets.chomp.to_i
-          puts "5. HP"
-          hp = gets.chomp.to_i
+
+          case race
+          when 'Dwarf'
+            bonus_constitution = 2
+            bonus_strength = 1
+          when 'Orc'
+            bonus_strength = 2
+            bonus_constitution = 1
+          when 'Elf'
+            bonus_dexterity = 2
+            bonus_intelligence = 1
+          when 'Human'
+            bonus_intelligence = 2
+            bonus_dexterity = 1
+          else
+            bonus_constitution = 0
+            bonus_strength = 0
+            bonus_dexterity = 0
+            bonus_intelligence = 0
+          end
+
+          case class_type
+          when 'Warrior'
+            bonus_strength +=6
+            bonus_HP += 12
+          when 'Mage', 'Cleric'
+            bonus_intelligence += 6
+            bonus_HP += 6
+          when 'Rogue'
+            bonus_dexterity +=6
+            bonus_HP += 8
+          else
+            puts "Невідомий клас персонажа. Спробуйте ще раз."
+            return
+          end
+
+          strength = roll_dice(6) + roll_dice(6) +  roll_dice(6) + bonus_strength
+          dexterity = roll_dice(6) + roll_dice(6) + roll_dice(6) + bonus_dexterity
+          constitution = roll_dice(6) + roll_dice(6) + roll_dice(6) + bonus_constitution
+          intelligence = roll_dice(6) + 6 + roll_dice(6) + roll_dice(6) + bonus_intelligence
+          hp = roll_dice(6) + roll_dice(6) + roll_dice(6) + bonus_HP
+
+          puts "Ваша сила: #{strength}"
+          puts "Ваша спритність: #{dexterity}"
+          puts "Ваша витривалість: #{constitution}"
+          puts "Ваш інтелект: #{intelligence}"
+          puts "Ваші HP: #{hp}"
 
           dnd_player.add_character(name) do
             race race

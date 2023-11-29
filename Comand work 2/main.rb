@@ -518,7 +518,7 @@ loop do
 
               puts "Персонаж #{selected_character[:name]} зустрів монстра #{random_monster[:name]}!"
               # Додавання зустріченого монстра до локації (можна зробити також інші дії)
-              puts "Бій розпочато!"
+              puts "Бій розпочато!"# доробити # if
 
               # Логіка бою
               while selected_character[:hp] > 0 && random_monster[:hp] > 0
@@ -575,9 +575,8 @@ loop do
                     puts "#{selected_character[:name]} блокує урон! Залишилося HP: #{selected_character[:hp]}"
                   end
 
-
-                  if selected_character[:hp] <= 0
-                    puts "#{selected_character[:name]} вбитий! Бій завершено."
+                  if selected_character[:hp] <= 0 #враховування 2 типів монстрів
+                    puts "#{selected_character[:name]} вбитий! Бій завершено."#відновлення монстра після його смерті
                     break
                   end
                 when 2

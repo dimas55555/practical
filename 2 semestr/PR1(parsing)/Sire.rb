@@ -14,7 +14,6 @@ doc = Nokogiri::HTML(page.body)
 # Визначення назви та місця CSV-файлу для зберігання результатів
 csv_filename = '2 semestr/PR1(parsing)/results.csv'
 
-# Відкриття CSV-файлу для запису результатів парсингу
 # Парсинг даних і збереження їх у масив
 elements = doc.css('div._3VJt4n ol._2vAAlI li._134slX._2C6PLy.tbvJKO')
 

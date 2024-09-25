@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.2.3)
+    gnuplotrb (0.4.0)
+      hamster (~> 3.0)
+    hamster (3.0.0)
+      concurrent-ruby (~> 1.0)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  gnuplotrb
+
+BUNDLED WITH
+   2.4.20
